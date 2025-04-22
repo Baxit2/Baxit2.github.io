@@ -15,7 +15,6 @@
       min-height: 100vh;
     }
 
-    /* Layout kontejner */
     .container {
       display: flex;
       flex: 1;
@@ -23,25 +22,54 @@
       box-sizing: border-box;
     }
 
-    /* Hlavní obsah vlevo */
     .content {
       flex: 3;
       padding-right: 40px;
     }
 
-    /* Reklama vpravo */
-    .sidebar {
+    .ad-banner {
       flex: 1;
-      background-color: #005baa;
-      color: white;
-      border-radius: 10px;
+      background: white;
+      border: 2px solid #005baa;
+      border-radius: 12px;
       padding: 20px;
-      height: fit-content;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
     }
 
-    .sidebar h3 {
-      margin-top: 0;
+    .ad-banner img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .ad-banner h3 {
+      color: #005baa;
+      margin: 0 0 10px;
+      font-size: 1.4em;
+    }
+
+    .ad-banner p {
+      font-size: 0.95em;
+      margin-bottom: 20px;
+    }
+
+    .ad-banner a {
+      background-color: #005baa;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .ad-banner a:hover {
+      background-color: #003f7f;
     }
 
     h1 {
@@ -82,17 +110,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    h2 {
-      margin-top: 0;
-      color: #34495e;
-    }
-
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-
-    /* Neaktivní tlačítka */
     .inactive-buttons {
       margin-top: 40px;
     }
@@ -117,7 +134,8 @@
         padding-right: 0;
       }
 
-      .sidebar {
+      .ad-banner {
+        max-width: 100%;
         margin-top: 30px;
       }
     }
@@ -145,9 +163,12 @@
       </div>
     </div>
 
-    <div class="sidebar">
+    <div class="ad-banner">
+      <!-- Místo obrázku můžeš vložit reálný -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Logo_VUT.svg/800px-Logo_VUT.svg.png" alt="VUT logo">
       <h3>🎓 VUT v Brně</h3>
-      <p>Studuj na Vysokém učení technickém v Brně. Široká nabídka technických oborů, moderní kampus a skvělá budoucnost!</p>
+      <p>Chceš budoucnost v technice? Přihlas se na Vysoké učení technické v Brně a studuj obor, který má smysl!</p>
+      <a href="#">Přihlásit se</a>
     </div>
   </div>
 
