@@ -139,6 +139,55 @@
         margin-top: 30px;
       }
     }
+.smart-wall-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://example.com/your-background.jpg') center/cover no-repeat;
+  color: white;
+  border: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+  padding: 20px 15px;
+  border-radius: 12px;
+  max-width: 300px;
+}
+
+.smart-wall-banner img {
+  width: 100px;
+  margin-bottom: 15px;
+  border-radius: 0;
+  background: white;
+  padding: 5px;
+}
+
+.smart-wall-banner h2 {
+  font-size: 2.2em;
+  color: #00ffcc;
+  margin: 0 0 10px;
+}
+
+.smart-wall-banner .subtitle {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.smart-wall-banner .small {
+  font-size: 0.85em;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.smart-wall-banner a {
+  background-color: #00c853;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.smart-wall-banner a:hover {
+  background-color: #009624;
+}
   </style>
 </head>
 <body>
@@ -163,15 +212,16 @@
       </div>
     </div>
 
-    <div class="ad-banner">
-      <!-- Místo obrázku můžeš vložit reálný -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Logo_VUT.svg/800px-Logo_VUT.svg.png" alt="VUT logo">
-      <h3>🎓 VUT v Brně</h3>
-      <p>Chceš budoucnost v technice? Přihlas se na Vysoké učení technické v Brně a studuj obor, který má smysl!</p>
-      <a href="#">Přihlásit se</a>
-    </div>
+    <div class="ad-banner smart-wall-banner">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Logo_VUT.svg/800px-Logo_VUT.svg.png" alt="Chytrá zeď logo">
+  <div class="ad-text">
+    <h2>-20 %</h2>
+    <p>na vaši novou <strong>Chytrou zeď</strong></p>
+    <p class="subtitle">Novoroční sleva<br>do 19. 1.</p>
+    <p class="small">Magnetická, popisovatelná,<br>projekční – prostě chytrá zeď.</p>
+    <a href="#">VÍCE INFO</a>
   </div>
-
+</div>
   <script>
     function zobrazReport() {
       document.getElementById("report").style.display = "block";
