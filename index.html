@@ -6,24 +6,58 @@
   <title>Report</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 30px;
-      background-color: #f4f4f4;
-    }
-    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
       color: #333;
     }
-    button {
-      margin-right: 10px;
-      padding: 10px 20px;
-      font-size: 16px;
+
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5em;
+      margin-bottom: 30px;
     }
+
+    button {
+      background-color: #2ecc71;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      margin-right: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+      transform: scale(1.05);
+    }
+
     #report {
-      margin-top: 20px;
-      padding: 15px;
-      background-color: #ffffff;
-      border: 1px solid #ccc;
-      display: none; /* schováno na začátku */
+      margin-top: 30px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #34495e;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
     }
   </style>
 </head>
